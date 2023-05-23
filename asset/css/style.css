@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato,Arial,sans-serif;
+}
+/* Header */
+body{
+  background-image: url("/asset/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
+
+.logo1 {
+  height:140px;
+  display: block;
+  margin-left: 300px;
+}
+.container{
+  max-width:960px;
+  margin: 0px auto;
+  background-color: rgba(0, 255, 255, 0.549);
+}
+.center {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#header{
+  background-color: none;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  font-size: larger;
+  background-color: rgb(74, 74, 254);
+}
+
+#main-menu{
+  display: flex;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+#main-menu li a{
+  color: f8f8f8;
+  display: block;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+#main-menu ul.sub-menu{
+  position: absolute;
+  background-color: aqua;
+  padding: 15px 0px;
+  list-style: none;
+  width: 200px;
+  display: none;
+}
+
+#main-menu li:hover>ul.sub-menu{
+  display: block;
+}
+
+#main-menu ul.sub-menu a{
+  padding: 10px 15px;
+  border-bottom: 1px solid rgb(63, 62, 62);
+}
+
+#main-menu ul.sub-menu li:hover a{
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#main-menu ul.sub-menu li:last-child a{
+  border: none;
+}
+
+#main-menu>li>a{
+  position: relative;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.30s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu>li:hover>a::before{
+  width: 100%;
+}
+
+
+/* Footer */
+#footer {
+    background-color:#282d32;
+    color: #ccc;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#footer .policy {
+  padding-bottom: 4px;
+}
+#footer .policy a {
+  color:  #ccc;
+  background-color: transparent;
+  text-decoration: none;
+}
+#footer .policy a:hover {
+  text-decoration: none;
+  color: red;
+  opacity: 0.8;
+  font-weight: 400;
+}
+#footer .policy a:visited {
+  text-decoration: none;
+}
+.social-items {
+    text-align: center;
+    padding: 8px 0;
+}
+.social-items i {
+    font-size: 24px;
+    padding: 0 10px;
+    color: #ccc;
+}
+.copyright {
+    text-align: center;
+    margin: 2px 0 0;
+    padding: 0 0 6px;
+}
